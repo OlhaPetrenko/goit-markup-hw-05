@@ -400,8 +400,6 @@ img {
 
 .client-icon {
   fill: var(--icon-color);
-  margin-right: auto;
-  margin-left: auto;
   transition: fill 250ms var(--timing-function);
 }
 
@@ -417,7 +415,7 @@ img {
   padding-bottom: 60px;
 }
 .page-bottom {
-  align-items: center;
+  align-items: baseline;
 }
 
 .contacts {
@@ -548,8 +546,12 @@ img {
   transition: box-shadow 250ms var(--timing-function);
 }
 
-.example-item:hover,
-.example-item:focus {
+.example-item .link {
+  display: block;
+}
+
+.example-item .link:hover,
+.example-item .link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
